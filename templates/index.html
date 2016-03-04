@@ -11,9 +11,6 @@
 
     <title>Calvin Collins</title>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
 	{% assets "main" %}
 		<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
@@ -38,8 +35,12 @@
 	<div class="main-wrapper">
 		<h3>Calvin's Experimental Site</h3>
 		<div class="challenge-box">
-			<h6>One: Rotate</h6>
-			<div class="small-box"></div>
+			<form>
+				<label for="Enter_Your_Name">Enter Your Name</label><input type="text" name="Enter_Your_Name" value="" id="Enter_Your_Name">
+			</form>
+			
+			<!--<h6>One: Rotate</h6>-->
+			<!--<div class="small-box"></div>-->
 		</div>
 		
 	</div>
@@ -48,20 +49,8 @@
     <!-- jQuery -->
     <script src="static/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="static/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="static/js/classie.js"></script>
-    <script src="static/js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="static/js/jqBootstrapValidation.js"></script>
-    <script src="static/js/contact_me.js"></script>
-
     <!-- Custom Theme JavaScript -->
-    <script src="static/js/freelancer.js"></script>
+    <script src="static/js/main.js"></script>
 
 </body>
 

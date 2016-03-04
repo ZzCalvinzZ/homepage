@@ -11,11 +11,21 @@ h3, h6 {
 
 /* line 8 */
 .challenge-box {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+/* line 13 */
+.challenge-box form {
+  text-align: center;
 }
 
-/* line 12 */
+/* line 16 */
+label {
+  display: inline-block;
+}
+
+/* line 21 */
 .small-box {
   width: 30px;
   height: 30px;
