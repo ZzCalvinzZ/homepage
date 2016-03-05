@@ -6,7 +6,14 @@ $(document).ready(function () {
 		var that = $(this);
 		name = that.val();
 
-		that.parent().siblings('button').text(name);
+		var button = that.parent().siblings('button');
+
+		if (name){
+			button.show().text(name + '?');
+		} else {
+			button.hide().text('');
+		}
+
 
 	});
 
