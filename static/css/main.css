@@ -14,18 +14,19 @@ h3, h6 {
   width: 500px;
   height: 500px;
   margin: auto;
+  text-align: center;
 }
-/* line 13 */
+/* line 14 */
 .challenge-box form {
   text-align: center;
 }
 
-/* line 16 */
+/* line 17 */
 label {
   display: inline-block;
 }
 
-/* line 21 */
+/* line 22 */
 .small-box {
   width: 30px;
   height: 30px;

@@ -6,7 +6,7 @@ $(document).ready(function () {
 		var that = $(this);
 		name = that.val();
 
-		that.parent().siblings('h6').text(name);
+		that.parent().siblings('button').text(name);
 
 	});
 
