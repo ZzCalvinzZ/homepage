@@ -22,11 +22,11 @@ env.register(
 
 @app.route('/')
 def main():
-	return render_template('index.html')
+	return render_template('home.html')
 
-@app.route('/experimental')
+@app.route('/cklabs')
 def experimental():
-	return render_template('experimental.html')
+	return render_template('cklabs.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', debug=True)
