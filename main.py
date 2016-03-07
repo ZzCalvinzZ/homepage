@@ -12,11 +12,19 @@ env.load_path = [
 ]
 
 env.register(
-    'main',
+    'home',
     assets.Bundle(
-        'main.sass',
+        'home/main.sass',
         filters='sass',
-        output='css/main.css'
+        output='css/home.css'
+    )
+)
+env.register(
+    'cklabs',
+    assets.Bundle(
+        'cklabs/main.sass',
+        filters='sass',
+        output='css/cklabs.css'
     )
 )
 

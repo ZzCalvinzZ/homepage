@@ -1,0 +1,39 @@
+/* line 1 */
+h3, h6 {
+  text-align: center;
+}
+
+/* line 4 */
+.main-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* line 8 */
+.challenge-box {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+}
+/* line 14 */
+.challenge-box form {
+  text-align: center;
+}
+/* line 17 */
+.challenge-box button {
+  margin-top: 15px;
+}
+
+/* line 20 */
+label {
+  display: inline-block;
+}
+
+/* line 25 */
+.small-box {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  margin: auto;
+}

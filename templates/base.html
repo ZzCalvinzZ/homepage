@@ -9,13 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>{% block title %}{% endblock %} - Calvin Collins</title>
+	<title>{% block title %}{% endblock %}</title>
 
-    <!-- Custom CSS -->
-	{% assets "main" %}
-		<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
-		{% block extra_style %}{% endblock %}
-	{% endassets %}
+	{% block extra_styles %}{% endblock %}
 
 
     <!-- Custom Fonts -->
@@ -38,7 +34,7 @@
 	{% block content %}{% endblock %}
 
     <script src="static/js/libraries/jquery.js"></script>
-    <script src="static/js/libraries/underscore.js"></script>
+    <script src="static/js/libraries/underscore.min.js"></script>
 
 	{% block extra_scripts %}{% endblock %}
 </body>
