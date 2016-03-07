@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block extra_scripts %}
+    <script src="static/js/main.js"></script>
+{% endblock %}
+
 {% block content %}
 	<div class="main-wrapper">
 		<h3>Calvin's Experimental Site</h3>
@@ -13,11 +17,5 @@
 		</div>
 		
 	</div>
-
-
-    <!-- jQuery -->
-    <script src="static/js/libraries/jquery.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="static/js/main.js"></script>
 {% endblock %}
+

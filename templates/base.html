@@ -14,7 +14,9 @@
     <!-- Custom CSS -->
 	{% assets "main" %}
 		<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
+		{% block extra_style %}{% endblock %}
 	{% endassets %}
+
 
     <!-- Custom Fonts -->
     <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,22 +33,14 @@
 </head>
 
 <body id="page-top" class="index">
-	<div id="wrapper">
-		<nav role="navigation">
-			<a title="Menu" href="#menu">Menu</a>
-			<ul id="menu">
-				<li class="active"><a class="icon-home" href="#home">Home</a></li><!-- whitespace
-				--><li><a class="icon-group" href="#about">About Us</a></li><!-- whitespace
-				--><li><a class="icon-leaf" href="#services">Services</a></li><!-- whitespace
-				--><li><a class="icon-picture" href="#portfolio">Portfolio</a></li><!-- whitespace
-				--><li><a class="icon-envelope-alt" href="#contact">Contact</a></li><!-- whitespace>
-				--><li><a class="icon-envelope-alt" href="cklabs">CKLabs</a></li>
-			</ul>
-		</nav>
-	</div>
-	{% block content %}
+	{% block nav %}{% endblock %}
 
-	{% endblock %}
+	{% block content %}{% endblock %}
+
+    <!-- jQuery -->
+    <script src="static/js/libraries/jquery.js"></script>
+
+	{% block extra_scripts %}{% endblock %}
 </body>
 
 
