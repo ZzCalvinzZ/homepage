@@ -24,5 +24,9 @@ env.register(
 def main():
 	return render_template('index.html')
 
+@app.route('/experimental')
+def experimental():
+	return render_template('experimental.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
