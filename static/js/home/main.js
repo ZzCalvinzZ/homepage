@@ -1,5 +1,14 @@
 $(document).ready(function () {
-	$('#contact :input[type="button"]').click(function () {
-		console.log('hi');
+	$('#contact form').submit(function (e) {
+		$form = $(this);
+		var data = {
+			'name': $form.find('[name="name"]').val()
+		}
+		$.post('emailcalvin',
+			data,
+			function (response) {
+				// success callback
+			}
+		);
 	});
 });

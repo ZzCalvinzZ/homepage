@@ -46,8 +46,8 @@ def main():
 
 @app.route('/emailcalvin', methods=['POST'])
 def email_calvin():
-	name = request.form.get('name', 'anonymous')
-	email = request.form.get('email')
+	# name = request.form.get('name', 'anonymous')
+	# email = request.form.get('email')
 	import ipdb; ipdb.set_trace()
 
 @app.route('/cklabs')
