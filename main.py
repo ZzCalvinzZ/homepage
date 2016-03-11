@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template, request
+from flask_mail import Mail
 from flask.ext import assets
 
 app = Flask(__name__)
@@ -46,9 +47,11 @@ def main():
 
 @app.route('/emailcalvin', methods=['POST'])
 def email_calvin():
-	# name = request.form.get('name', 'anonymous')
-	# email = request.form.get('email')
-	import ipdb; ipdb.set_trace()
+	name = request.form.get('name', 'anonymous')
+	email = request.form.get('email')
+	message = request.form.get('textarea', '')
+
+	return 'success'
 
 @app.route('/cklabs')
 def experimental():
