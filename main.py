@@ -32,10 +32,12 @@ env.register(
 def main():
 	projects = [{
 			'name': 'Minesweeper',
-			'link': 'static/img/portfolio/minesweeper.png',
+			'image': 'static/img/portfolio/minesweeper.png',
+			'link': 'http://minesweeper.calvinkcollins.com'
 		}, {
 			'name': "Gascreep's Fortune",
-			'link': "static/img/portfolio/gascreep.png" ,
+			'image': "static/img/portfolio/gascreep.png" ,
+			'link': 'http://gascreep.calvinkcollins.com'
 		}
 			
 	]

@@ -32,12 +32,14 @@
 	<a name="portfolio"><h2>Portfolio</h2></a>
 	<div id="portfolio-list">
 		{% for project in projects %}
-			<div class="project">
-				<h3>{{ project.name }}</h3>
-				<div class="img-box">
-					<img src="{{ project.link }}" alt="minesweeper"/>
+			<a href="{{ project.link }}" target="_blank">
+				<div class="project">
+					<h3>{{ project.name }}</h3>
+					<div class="img-box">
+						<img src="{{ project.image }}" alt="minesweeper"/>
+					</div>
 				</div>
-			</div>
+			</a>
 		{% endfor %}
 	</div>
 </div>

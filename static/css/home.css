@@ -3,21 +3,29 @@
   zoom: 25%;
 }
 
-/* line 4 */
-.project {
-  display: inline-block;
+/* line 5 */
+#portfolio a {
+  text-decoration: none;
 }
 /* line 7 */
-.project h3 {
-  text-align: center;
+#portfolio a:visited {
+  color: initial;
 }
 /* line 10 */
-.project .img-box {
+#portfolio .project {
+  display: inline-block;
+}
+/* line 13 */
+#portfolio .project h3 {
+  text-align: center;
+}
+/* line 16 */
+#portfolio .project .img-box {
   width: 250px;
   height: 120px;
 }
-/* line 14 */
-.project .img-box img {
+/* line 20 */
+#portfolio .project .img-box img {
   max-width: 100%;
   max-height: 100%;
   display: block;
