@@ -31,18 +31,14 @@
 <div id="portfolio">
 	<a name="portfolio"><h2>Portfolio</h2></a>
 	<div id="portfolio-list">
-		<div class="project">
-			<h3>Minesweeper</h3>
-			<div class="img-box">
-				<img src="static/img/portfolio/minesweeper.png" alt="minesweeper"/>
+		{% for project in projects %}
+			<div class="project">
+				<h3>{{ project.name }}</h3>
+				<div class="img-box">
+					<img src="{{ project.link }}" alt="minesweeper"/>
+				</div>
 			</div>
-		</div>
-		<div class="project">
-			<h3>Gascreep's Fortune</h3>
-			<div class="img-box">
-				<img src="static/img/portfolio/gascreep.png" alt="Gascreep's Fortune"/>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 </div>
 <div id="contact">
