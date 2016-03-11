@@ -3,17 +3,20 @@
   zoom: 25%;
 }
 
-/* line 5 */
-.project .img-box {
-  width: 250px;
-  height: 200px;
+/* line 4 */
+.project {
   display: inline-block;
 }
-/* line 10 */
-.project .img-box h3 {
+/* line 7 */
+.project h3 {
   text-align: center;
 }
-/* line 13 */
+/* line 10 */
+.project .img-box {
+  width: 250px;
+  height: 120px;
+}
+/* line 14 */
 .project .img-box img {
   max-width: 100%;
   max-height: 100%;
