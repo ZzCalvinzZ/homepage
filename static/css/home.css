@@ -7,24 +7,20 @@
 #portfolio a {
   text-decoration: none;
 }
-/* line 7 */
-#portfolio a:visited {
-  color: initial;
-}
-/* line 10 */
+/* line 8 */
 #portfolio .project {
   display: inline-block;
 }
-/* line 13 */
+/* line 11 */
 #portfolio .project h3 {
   text-align: center;
 }
-/* line 16 */
+/* line 14 */
 #portfolio .project .img-box {
   width: 250px;
   height: 120px;
 }
-/* line 20 */
+/* line 18 */
 #portfolio .project .img-box img {
   max-width: 100%;
   max-height: 100%;

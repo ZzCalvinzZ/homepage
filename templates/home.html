@@ -2,6 +2,10 @@
 
 {% block title %}Calvin Collins{% endblock%}
 
+{% block extra_scripts %}
+    <script src="static/js/home/main.js"></script>
+{% endblock %}
+
 {% block extra_styles %}
 	{% assets "home" %}
 		<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
@@ -45,6 +49,11 @@
 </div>
 <div id="contact">
 	<a name="contact"><h2>Contact</h2></a>
+	<form>
+		<input type="text" placeholder="Name" name="name">
+		
+		<input type="button" value="Submit">
+	</form>
 </div>
 	
 
