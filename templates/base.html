@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 
-	{% block extra_styles %}{% endblock %}
+    {% block extra_styles %}{% endblock %}
 
 
     <!-- Custom Fonts -->
@@ -29,14 +29,18 @@
 </head>
 
 <body id="page-top" class="index">
-	{% block nav %}{% endblock %}
+    <header>
+        <h1><a href="/">Calvin Collins</a></h1>
+        <h2>Software And Stuff</h2>
+    </header>
+    {% block nav %}{% endblock %}
 
-	{% block content %}{% endblock %}
+    {% block content %}{% endblock %}
 
     <script src="static/js/libraries/jquery.js"></script>
     <script src="static/js/libraries/underscore.min.js"></script>
 
-	{% block extra_scripts %}{% endblock %}
+    {% block extra_scripts %}{% endblock %}
 </body>
 
 

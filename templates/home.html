@@ -4,10 +4,12 @@
 
 {% block extra_scripts %}
     <script src="static/js/home/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
 {% endblock %}
 
 {% block extra_styles %}
 	{% assets "home" %}
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
 		<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
 	{% endassets %}
 {% endblock  %}
@@ -18,44 +20,46 @@
 
 {% block content %}
 
-<div id="about">
-	<a name="about" ><h2>About Me</h2></a>
-	<img id="about-profile-pic" src="static/img/profile.png" alt="profile"/>
-	<p> Hi, my name is Calvin Collins. I am a software developer by trade, currently
-		working as a full stack python web developer for Surveymonkey. I just freakin
-		love developing cool stuff. If your interested, let me know if you could use 
-		some of my services. Check out a bunch of my skills listed below and feel free
-		to contact me about anything at all!
-	</p>
-</div>
-<div id="services">
-	<a name="services"><h2>Services</h2></a>
-	<p>I offer full stack software development services. My main areas of expertise are MYSQL, Python, HTML, Javascript, CSS</p>
-</div>
-<div id="portfolio">
-	<a name="portfolio"><h2>Portfolio</h2></a>
-	<div id="portfolio-list">
-		{% for project in projects %}
-			<a href="{{ project.link }}" target="_blank">
-				<div class="project">
-					<h3>{{ project.name }}</h3>
-					<div class="img-box">
-						<img src="{{ project.image }}" alt="minesweeper"/>
-					</div>
-				</div>
-			</a>
-		{% endfor %}
+<div id="content">
+	<div id="about">
+		<a name="about" ><h2>About Me</h2></a>
+		<img id="about-profile-pic" src="static/img/profile.png" alt="profile"/>
+		<p> Hi, my name is Calvin Collins. I am a software developer by trade, currently
+			working as a full stack python web developer for Surveymonkey. I just freakin
+			love developing cool stuff. If your interested, let me know if you could use 
+			some of my services. Check out a bunch of my skills listed below and feel free
+			to contact me about anything at all!
+		</p>
 	</div>
-</div>
-<div id="contact">
-	<a name="contact"><h2>Contact</h2></a>
-	<form>
-		<input type="text" placeholder="Name" name="name">
-		<input type="email" placeholder="Email" name="email">
-		<textarea name="message" rows="8" cols="40"></textarea>
-		
-		<input type="submit" value="Submit">
-	</form>
+	<div id="services">
+		<a name="services"><h2>Services</h2></a>
+		<p>I offer full stack software development services. My main areas of expertise are MYSQL, Python, HTML, Javascript, CSS</p>
+	</div>
+	<div id="portfolio">
+		<a name="portfolio"><h2>Portfolio</h2></a>
+		<div id="portfolio-list">
+			{% for project in projects %}
+				<a href="{{ project.link }}" target="_blank">
+					<div class="project">
+						<h3>{{ project.name }}</h3>
+						<div class="img-box">
+							<img src="{{ project.image }}" alt="minesweeper"/>
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+	<div id="contact">
+		<a name="contact"><h2>Contact</h2></a>
+		<form>
+			<input type="text" placeholder="Name" name="name">
+			<input type="email" placeholder="Email" name="email">
+			<textarea name="message" rows="8" cols="40"></textarea>
+			
+			<input type="submit" value="Submit">
+		</form>
+	</div>
 </div>
 	
 
