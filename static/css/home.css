@@ -36,8 +36,8 @@ body header h2 {
 }
 /* line 31 */
 body header, body #content, body nav.top-bar {
-  padding-left: 55px;
-  padding-right: 55px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 /* line 35 */
 body nav.top-bar {
@@ -76,27 +76,30 @@ body #content #about-profile-pic {
 }
 /* line 66 */
 body #content #about p, body #content #services p {
-  width: 500px;
   overflow: hidden;
 }
-/* line 72 */
+/* line 70 */
+body #content #about p {
+  padding-left: 30px;
+}
+/* line 75 */
 body #content #portfolio a {
   text-decoration: none;
 }
-/* line 75 */
+/* line 78 */
 body #content #portfolio .project {
   display: inline-block;
 }
-/* line 78 */
+/* line 81 */
 body #content #portfolio .project h3 {
   text-align: center;
 }
-/* line 81 */
+/* line 84 */
 body #content #portfolio .project .img-box {
   width: 250px;
   height: 120px;
 }
-/* line 85 */
+/* line 88 */
 body #content #portfolio .project .img-box img {
   max-width: 100%;
   max-height: 100%;
