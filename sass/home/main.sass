@@ -3,8 +3,15 @@ body
 	max-width: 1000px
 	position: relative
 	margin: 0 auto
+	font-size: 1.15em
+
+	div
+		background: #f2f2f2 top left
+
 	header
 		background: #333
+		padding-top: 1.5em
+		padding-bottom: 1.5em
 
 		h1
 			font-size: 2.2em
@@ -26,32 +33,57 @@ body
 		padding-right: 55px
 
 	nav.top-bar
-		a
-			padding: .7rem 1rem .7rem 0
+		background-color: #ccc
+		background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(50%, #cccccc), color-stop(100%, #b0b0b0))
+		background: -webkit-linear-gradient(#e0e0e0,#cccccc,#b0b0b0)
+		background: -moz-linear-gradient(#e0e0e0,#cccccc,#b0b0b0)
+		background: -o-linear-gradient(#e0e0e0,#cccccc,#b0b0b0)
+		background: linear-gradient(#e0e0e0,#cccccc,#b0b0b0)
+		border-top: 1px solid #f2f2f2
+		border-bottom: 1px solid #8c8c8c
 
-	#about-profile-pic
-		zoom: 25%
+		ul
+			background: none
 
-	#about, #services
-		p
-			width: 500px
+			li
+				background: none
 
-	#portfolio
-		a
-			text-decoration: none
+				a
+					color: #6b6b6b
+					background: none
+					padding: .7rem 1rem .7rem 0
 
-		.project
+	#content
+		h2
+			padding-top: .5em
+			padding-bottom: .5em
 
-			display: inline-block
-			h3
-				text-align: center
+		#about-profile-pic
+			zoom: 25%
+			float: left
 
-			.img-box
-				width: 250px
-				height: 120px
+		#about, #services
+			p
+				width: 500px
+				overflow: hidden
 
-				img
-					max-width: 100%
-					max-height: 100%
-					display: block
-					margin: auto
+
+		#portfolio
+			a
+				text-decoration: none
+
+			.project
+
+				display: inline-block
+				h3
+					text-align: center
+
+				.img-box
+					width: 250px
+					height: 120px
+
+					img
+						max-width: 100%
+						max-height: 100%
+						display: block
+						margin: auto
