@@ -10,7 +10,6 @@ assets.Environment.debug = False
 assets.Environment.auto_build = False
 env = assets.Environment(app)
 
-
 # Tell flask-assets where to look for our coffeescript and sass files.
 env.load_path = [
 	os.path.join(os.path.dirname(__file__), 'sass'),
@@ -70,4 +69,4 @@ def experimental():
 	return render_template('cklabs.html')
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0')
+	app.run(host='0.0.0.0', debug=True)
