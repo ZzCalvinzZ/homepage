@@ -64,42 +64,55 @@ body nav.top-bar ul li a {
   background: none;
   padding: 0.7rem 1rem 0.7rem 0;
 }
-/* line 57 */
+/* line 56 */
+body #content {
+  padding-bottom: 60px;
+}
+/* line 59 */
+body #content > div {
+  border-top: 1px solid grey;
+}
+/* line 62 */
+body #content > div:first-child {
+  border: none;
+}
+/* line 65 */
 body #content h2 {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  text-align: center;
 }
-/* line 61 */
+/* line 70 */
 body #content #about-profile-pic {
   zoom: 25%;
   float: left;
 }
-/* line 66 */
+/* line 75 */
 body #content #about p, body #content #services p {
   overflow: hidden;
 }
-/* line 70 */
+/* line 79 */
 body #content #about p {
   padding-left: 30px;
 }
-/* line 75 */
+/* line 84 */
 body #content #portfolio a {
   text-decoration: none;
 }
-/* line 78 */
+/* line 87 */
 body #content #portfolio .project {
   display: inline-block;
 }
-/* line 81 */
+/* line 90 */
 body #content #portfolio .project h3 {
   text-align: center;
 }
-/* line 84 */
+/* line 93 */
 body #content #portfolio .project .img-box {
   width: 250px;
   height: 120px;
 }
-/* line 88 */
+/* line 97 */
 body #content #portfolio .project .img-box img {
   max-width: 100%;
   max-height: 100%;
