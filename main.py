@@ -1,4 +1,5 @@
 import os
+import smtplib
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 from flask.ext import assets
@@ -54,15 +55,24 @@ def email_calvin():
 	email = request.form.get('email')
 	message = request.form.get('textarea', '')
 
-	msg = Message(
-		message,
-		sender= email,
-		recipients=["calvinkcollins@gmail.com"]
-	)
+	try:
+		s = smtplib.SMTP('localhost')
+		s.sendmail(email, 'calvinkcollins@gmail.com', message)
+		s.quit()
 
-	mail.send(msg)
+		return 'success'
+	except SMTPException:
+		print "Error: unable to send email"
+		return 'error'
 
-	return 'success'
+	# msg = Message(
+		# message,
+		# sender= email,
+		# recipients=["calvinkcollins@gmail.com"]
+	# )
+
+	# mail.send(msg)
+
 
 @app.route('/cklabs')
 def experimental():
