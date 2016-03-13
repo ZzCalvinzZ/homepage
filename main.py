@@ -53,7 +53,7 @@ def main():
 def email_calvin():
 	name = request.form.get('name', 'anonymous')
 	email = request.form.get('email')
-	message = request.form.get('textarea', '')
+	message = request.form.get('message', '')
 
 	try:
 		s = smtplib.SMTP('localhost')
@@ -79,4 +79,4 @@ def experimental():
 	return render_template('cklabs.html')
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', debug=True)
+	app.run(host='0.0.0.0')
