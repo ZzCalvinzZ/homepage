@@ -19,6 +19,11 @@ $(document).ready(function () {
 				}
 			}
 		);
+
+		$form.find('[name="name"]').val('')
+		$form.find('[name="email"]').val('')
+		$form.find('[name="message"]').val('')
+
 		e.preventDefault();
 	});
 });
