@@ -53,11 +53,12 @@ def main():
 def email_calvin():
 	name = request.form.get('name', 'anonymous')
 	email = request.form.get('email')
-	message = request.form.get('message', '')
+	text = request.form.get('message', '')
+	message = 'Subject: %s - %s\n\n%s' % (name, email, text)
 
 	try:
 		s = smtplib.SMTP('localhost')
-		s.sendmail(email, 'calvinkcollins@gmail.com', message)
+		s.sendmail('calvin@calvinkcollins.com', 'calvinkcollins@gmail.com', message)
 		s.quit()
 
 		return 'success'
