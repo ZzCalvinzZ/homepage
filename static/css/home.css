@@ -1,4 +1,4 @@
-/* line 1 */
+@media -sass-debug-info{filename{}line{font-family:\000031}}
 body {
   background: #252525 top left;
   max-width: 1000px;
@@ -6,40 +6,53 @@ body {
   margin: 0 auto;
   font-size: 1.15em;
 }
-/* line 8 */
+@media -sass-debug-info{filename{}line{font-family:\000038}}
 body div {
   background: #f2f2f2 top left;
 }
-/* line 11 */
+@media -sass-debug-info{filename{}line{font-family:\0000311}}
 body header {
   background: #333;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 16 */
+@media screen and (max-width: 615px) {
+@media -sass-debug-info{filename{}line{font-family:\0000311}}
+  body header {
+    text-align: center;
+  }
+}
+@media -sass-debug-info{filename{}line{font-family:\0000319}}
 body header h1 {
   font-size: 2.2em;
   font-weight: normal;
   line-height: 1.2em;
 }
-/* line 21 */
+@media -sass-debug-info{filename{}line{font-family:\0000324}}
 body header h1 a {
   color: #f2f2f2;
   text-decoration: none;
 }
-/* line 25 */
+@media -sass-debug-info{filename{}line{font-family:\0000328}}
 body header h2 {
   margin: 0.2em 0 0;
   font-size: 1em;
   color: #aaa;
   font-weight: normal;
 }
-/* line 31 */
+@media -sass-debug-info{filename{}line{font-family:\0000334}}
 body header, body #content, body nav.top-bar {
   padding-left: 100px;
   padding-right: 100px;
 }
-/* line 35 */
+@media screen and (max-width: 615px) {
+@media -sass-debug-info{filename{}line{font-family:\0000334}}
+  body header, body #content, body nav.top-bar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media -sass-debug-info{filename{}line{font-family:\0000341}}
 body nav.top-bar {
   background-color: #ccc;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(50%, #cccccc), color-stop(100%, #b0b0b0));
@@ -50,139 +63,82 @@ body nav.top-bar {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #8c8c8c;
 }
-/* line 45 */
+@media -sass-debug-info{filename{}line{font-family:\0000351}}
 body nav.top-bar ul {
   background: none;
 }
-/* line 48 */
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
 body nav.top-bar ul li {
   background: none;
 }
-/* line 51 */
+@media -sass-debug-info{filename{}line{font-family:\0000357}}
 body nav.top-bar ul li a {
   color: #6b6b6b;
   background: none;
   padding: 0.7rem 1rem 0.7rem 0;
 }
-/* line 56 */
+@media -sass-debug-info{filename{}line{font-family:\0000362}}
 body #content {
   padding-bottom: 60px;
 }
-/* line 59 */
+@media -sass-debug-info{filename{}line{font-family:\0000365}}
 body #content > div {
   padding-top: 1em;
   padding-bottom: 1em;
   border-top: 1px solid grey;
 }
-/* line 64 */
+@media -sass-debug-info{filename{}line{font-family:\0000370}}
 body #content > div:first-child {
   border: none;
 }
-/* line 67 */
+@media -sass-debug-info{filename{}line{font-family:\0000373}}
 body #content h2 {
   padding-bottom: 0.5em;
   text-align: center;
 }
-/* line 71 */
+@media -sass-debug-info{filename{}line{font-family:\0000377}}
 body #content a, body #content a:hover {
   cursor: default;
   color: black;
 }
-/* line 76 */
+@media -sass-debug-info{filename{}line{font-family:\0000382}}
 body #content #about-profile-pic {
   zoom: 25%;
-  float: left;
 }
-/* line 81 */
+@media -sass-debug-info{filename{}line{font-family:\0000386}}
 body #content #about p, body #content #services p {
   overflow: hidden;
 }
-/* line 85 */
+@media -sass-debug-info{filename{}line{font-family:\0000389}}
+body #content #about {
+  text-align: center;
+}
+@media -sass-debug-info{filename{}line{font-family:\0000391}}
 body #content #about p {
   padding-left: 30px;
 }
-/* line 90 */
+@media -sass-debug-info{filename{}line{font-family:\0000396}}
 body #content #portfolio a {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 94 */
+@media -sass-debug-info{filename{}line{font-family:\00003100}}
 body #content #portfolio .project {
   display: inline-block;
 }
-/* line 97 */
+@media -sass-debug-info{filename{}line{font-family:\00003103}}
 body #content #portfolio .project h3 {
   text-align: center;
 }
-/* line 100 */
+@media -sass-debug-info{filename{}line{font-family:\00003106}}
 body #content #portfolio .project .img-box {
   width: 250px;
   height: 120px;
 }
-/* line 104 */
+@media -sass-debug-info{filename{}line{font-family:\00003110}}
 body #content #portfolio .project .img-box img {
   max-width: 100%;
   max-height: 100%;
   display: block;
   margin: auto;
 }
-
-body #skills {
-    margin: auto;
-}
-
-/*!
- * jQCloud 2.0.2
- * Copyright 2011 Luca Ongaro (http://www.lucaongaro.eu)
- * Copyright 2013 Daniel White (http://www.developerdan.com)
- * Copyright 20142016 Damien "Mistic" Sorel (http://www.strangeplanet.fr)
- * Licensed under MIT (http://opensource.org/licenses/MIT)
- */
-/* layout */
-div.jqcloud {
-  overflow: hidden;
-  position: relative;
-}
-
-div.jqcloud span {
-  padding: 0;
-}
-
-/* fonts */
-div.jqcloud {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 10px;
-  line-height: normal;
-}
-
-div.jqcloud a {
-  font-size: inherit;
-  text-decoration: none;
-}
-
-div.jqcloud span.w10 { font-size: 550%; }
-div.jqcloud span.w9 { font-size: 500%; }
-div.jqcloud span.w8 { font-size: 450%; }
-div.jqcloud span.w7 { font-size: 400%; }
-div.jqcloud span.w6 { font-size: 350%; }
-div.jqcloud span.w5 { font-size: 300%; }
-div.jqcloud span.w4 { font-size: 250%; }
-div.jqcloud span.w3 { font-size: 200%; }
-div.jqcloud span.w2 { font-size: 150%; }
-div.jqcloud span.w1 { font-size: 100%; }
-
-/* colors */
-div.jqcloud { color: #09f; }
-div.jqcloud a { color: inherit; }
-div.jqcloud a:hover { color: #0df; }
-div.jqcloud a:hover { color: #0cf; }
-div.jqcloud span.w10 { color: #0cf; }
-div.jqcloud span.w9 { color: #0cf; }
-div.jqcloud span.w8 { color: #0cf; }
-div.jqcloud span.w7 { color: #39d; }
-div.jqcloud span.w6 { color: #90c5f0; }
-div.jqcloud span.w5 { color: #90a0dd; }
-div.jqcloud span.w4 { color: #90c5f0; }
-div.jqcloud span.w3 { color: #a0ddff; }
-div.jqcloud span.w2 { color: #99ccee; }
-div.jqcloud span.w1 { color: #aab5f0; }

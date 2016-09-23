@@ -24,8 +24,8 @@ $(function () {
 	];
 
 	$('#skills').jQCloud(words, {
-		width: 500,
-		height: 350,
+		width: $('#skills').height(),
+		height: 250,
 		colors: ["#0009EA", "#EA001C", "#EA3C00", "#fc4e2a", "#7200EA", "#EAAA00", "#EA7C00", "#3BEA00", "#EA00C0"],
 	});
 

@@ -13,6 +13,9 @@ body
 		padding-top: 1.5em
 		padding-bottom: 1.5em
 
+		@media screen and (max-width : 615px)
+			text-align: center
+
 		h1
 			font-size: 2.2em
 			font-weight: normal
@@ -31,6 +34,9 @@ body
 	header, #content, nav.top-bar
 		padding-left: 100px
 		padding-right: 100px
+		@media screen and (max-width : 615px)
+			padding-left: 0
+			padding-right: 0
 
 	nav.top-bar
 		background-color: #ccc
@@ -75,13 +81,13 @@ body
 
 		#about-profile-pic
 			zoom: 25%
-			float: left
 
 		#about, #services
 			p
 				overflow: hidden
 
 		#about
+			text-align: center
 			p
 				padding-left: 30px
 
@@ -106,3 +112,7 @@ body
 						max-height: 100%
 						display: block
 						margin: auto
+
+//@media only screen and (min-width : 768px)
+//@media only screen and (min-width : 992px)
+//@media only screen and (min-width : 1200px)

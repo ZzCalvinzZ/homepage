@@ -7,8 +7,8 @@ from flask.ext import assets
 app = Flask(__name__)
 mail = Mail(app)
 
-assets.Environment.debug = False
-assets.Environment.auto_build = False
+assets.Environment.debug = True
+assets.Environment.auto_build = True
 env = assets.Environment(app)
 
 # Tell flask-assets where to look for our coffeescript and sass files.
