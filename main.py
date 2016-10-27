@@ -43,6 +43,10 @@ def main():
 			'name': "Gascreep's Fortune",
 			'image': "static/img/portfolio/gascreep.png" ,
 			'link': 'http://gascreep.calvinkcollins.com'
+		}, {
+			'name': "The Great Picture Reveal",
+			'image': "static/img/portfolio/picture_reveal.png" ,
+			'link': 'http://thegreatpicturereveal.com'
 		}
 			
 	]
